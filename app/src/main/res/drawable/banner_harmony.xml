@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="150dp"
+    android:viewportWidth="360"
+    android:viewportHeight="150">
+    <!-- 蓝色渐变背景 -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M0,0h360v150h-360z" />
+    <!-- 装饰元素 -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M0,0h360v50s-80,40 -180,0S0,50 0,50z" />
+    <text
+        android:x="180dp"
+        android:y="75dp"
+        android:text="HarmonyOS"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+</vector>

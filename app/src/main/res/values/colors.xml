@@ -1,0 +1,19 @@
+<resources>
+    <!-- 原有的颜色 -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="primary_color">#6200EE</color>
+    <color name="nav_unselected">#666666</color>
+    <color name="pink_primary">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- 课程背景颜色 -->
+    <color name="course_color_1">#90CAF9</color> <!-- 亮蓝色 -->
+    <color name="course_color_2">#81C784</color> <!-- 亮绿色 -->
+    <color name="course_color_3">#FFB74D</color> <!-- 亮橙色 -->
+    <color name="course_color_4">#F48FB1</color> <!-- 亮粉色 -->
+    <color name="course_color_5">#CE93D8</color> <!-- 亮紫色 -->
+    <color name="course_color_6">#FFD54F</color> <!-- 亮黄色 -->
+    <color name="course_color_7">#AED581</color> <!-- 亮浅绿 -->
+</resources>

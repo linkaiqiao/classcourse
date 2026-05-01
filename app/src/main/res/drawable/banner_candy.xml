@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="150dp"
+    android:viewportWidth="360"
+    android:viewportHeight="150">
+
+    <!-- 黄色背景 -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M0,0h360v150h-360z" />
+
+    <!-- 橙色装饰 -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M0,0h360v100s-60,50 -180,0S0,100 0,100z" />
+
+    <!-- 用路径绘制糖果图案（代替圆圈） -->
+    <!-- 大圆圈 -->
+    <path
+        android:fillColor="#FF4081"
+        android:pathData="M170,60a20,20 0 1,1 20,0a20,20 0 1,1 -20,0" />
+
+    <!-- 左小圆圈 -->
+    <path
+        android:fillColor="#FF4081"
+        android:pathData="M155,80a15,15 0 1,1 10,0a15,15 0 1,1 -10,0" />
+
+    <!-- 右小圆圈 -->
+    <path
+        android:fillColor="#FF4081"
+        android:pathData="M195,80a15,15 0 1,1 10,0a15,15 0 1,1 -10,0" />
+
+    <!-- 用路径模拟文本线条 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,110h120v6h-120z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M130,125h100v4h-100z" />
+</vector>

@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="150dp"
+    android:viewportWidth="360"
+    android:viewportHeight="150">
+
+    <!-- 绿色背景 -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M0,0h360v150h-360z" />
+
+    <!-- 深绿色装饰 -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M0,0h360v120s-100,30 -180,0S0,120 0,120z" />
+
+    <!-- 使用路径绘制文本："益力多校园活动" -->
+    <!-- 这里用简单的矩形条模拟文本，实际使用时应该用真正的文字路径数据 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,70 h160 v6 h-160z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,85 h140 v4 h-140z" />
+</vector>

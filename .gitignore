@@ -1,0 +1,29 @@
+# Android 项目忽略规则
+*.iml
+.gradle/
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries/
+/.idea/caches/
+/.idea/
+.DS_Store
+/build/
+/captures/
+*.apk
+*.ap_
+*.aab
+
+# 系统文件
+.trae*/
+.traeData*/
+AppData/
+Thumbs.db
+*.bak
+*.swp
+*.tmp
+
+# 日志文件
+*.log
+
+# 模拟器文件
+.android/

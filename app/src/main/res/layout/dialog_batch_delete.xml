@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择删除范围："
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbDeleteCurrentWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除本周课程" />
+
+    <CheckBox
+        android:id="@+id/cbDeleteWeekRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除指定周数范围的课程"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/llDeleteWeekRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etDeleteStartWeek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="开始周"
+            android:inputType="number"
+            android:maxLength="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/etDeleteEndWeek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="结束周"
+            android:inputType="number"
+            android:maxLength="2" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbDeleteAllWeeks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除所有周数的课程"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注意：删除操作不可撤销！"
+        android:textSize="12sp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

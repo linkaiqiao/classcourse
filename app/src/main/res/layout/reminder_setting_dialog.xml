@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上课提醒设置"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 课程信息 -->
+    <TextView
+        android:id="@+id/tvCourseInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="课程名称"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvCourseTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上课时间"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 启用提醒开关 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="启用上课提醒"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+    </LinearLayout>
+
+    <!-- 提前提醒时间 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提前提醒时间"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <!-- 快速选择按钮 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn5min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5分钟"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:textSize="12sp"
+                android:backgroundTint="#6200EE"
+                style="@style/Widget.AppCompat.Button" />
+
+            <Button
+                android:id="@+id/btn10min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10分钟"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#6200EE"
+                style="@style/Widget.AppCompat.Button" />
+
+            <Button
+                android:id="@+id/btn15min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15分钟"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:textSize="12sp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#6200EE"
+                style="@style/Widget.AppCompat.Button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btn30min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30分钟"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#6200EE"
+            style="@style/Widget.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/btn60min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1小时"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#6200EE"
+            style="@style/Widget.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/btnCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#FF9800"
+            style="@style/Widget.AppCompat.Button" />
+
+    </LinearLayout>
+
+    <!-- 自定义时间输入 -->
+    <LinearLayout
+        android:id="@+id/llCustomTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etCustomMinutes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="输入分钟数"
+            android:inputType="number"
+            android:maxLength="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分钟前提醒"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- 下一次上课时间预览 -->
+    <TextView
+        android:id="@+id/tvNextClassTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下次上课：未安排"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginTop="8dp" />
+
+    <!-- 提醒时间预览 -->
+    <TextView
+        android:id="@+id/tvReminderPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提醒时间：未设置"
+        android:textSize="12sp"
+        android:textColor="#6200EE"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>

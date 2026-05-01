@@ -1,0 +1,11 @@
+<resources>
+    <!-- 课程表相关尺寸 -->
+    <dimen name="table_header_height">40dp</dimen>
+    <dimen name="table_row_height">60dp</dimen>
+    <dimen name="time_cell_width">60dp</dimen>
+    <dimen name="course_cell_width">0dp</dimen> <!-- 权重控制 -->
+
+    <!-- 间距 -->
+    <dimen name="cell_padding">2dp</dimen>
+    <dimen name="cell_margin">0.5dp</dimen>
+</resources>
