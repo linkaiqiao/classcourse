@@ -61,7 +61,7 @@ app/src/main/java/com/example/classcourse2/
 ## 应用截图
 
 <img width="1200" height="2670" alt="753bec804dd627dc240d6cb93e3bb40e" src="https://github.com/user-attachments/assets/75ca1515-454d-44da-b218-a5bfb3c72d4a" />
-
+详细应用截图：https://linkaiqiao.github.io/
 
 ## License
 
